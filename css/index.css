@@ -1,0 +1,131 @@
+* {
+    transition: all 0.4s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+body {
+    background-color: rgb(32, 0, 48);
+    margin: 0;
+
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* 设置搜索框 */
+form.example input[type=text] {
+    padding: 10px;height: 50px;
+    font-size: 17px;
+    border: 1px solid grey;
+    float: left;
+    width: 200px;
+    background: #f1f1f1;
+}
+form.example input[type=text]:hover {
+    width: 350px;
+}
+/* 设置提交按钮 */
+form.example a {
+    float: left;
+    width: 50px;
+    padding: 10px;
+    height: 50px;
+    background: #2196F3;
+    color: white;
+    font-size: 17px;
+    border: 1px solid grey;
+    border-left: none;
+    /* 防止双边框 */
+    cursor: pointer;
+}
+
+form.example a:hover {
+    background: #0b7dda;
+}
+
+/* 清除浮动 */
+form.example::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.search {
+    width: 100%;
+    position: relative;
+    display: flex;
+}
+.searchTerm {
+    width: 100%;
+    border: 3px solid #00B4CC;
+    border-right: none;
+    padding: 5px;
+    height: 20px;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    color: #9DBFAF;
+}
+
+.searchTerm:focus {
+    color: #00B4CC;
+}
+
+.searchButton {
+    width: 40px;
+    height: 36px;
+    border: 1px solid #00B4CC;
+    background: #00B4CC;
+    text-align: center;
+    color: #fff;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+/* 调整大小查看搜索栏的变化*/
+.wrap {
+    width: 30%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.example{
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.body{
+    display: grid;
+    margin-top: 25%;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+.app{
+    background-color: rgb(157, 197, 239);
+    margin: 20px;
+    padding: 10px;
+    box-shadow: 10 10 30 rgba(0, 0, 0, 0.047);
+    box-shadow: -10 -10 10 rgba(255, 255, 255, 1);
+    border-radius: 5px;
+}
+.app:hover{
+    transform: translateY(-10px);
+}
+.AN{
+    font-size: 20px;
+    font-weight: 800;
+}
+a{
+    background: #0b7dda;
+    border-radius: 3px;
+    color: #f1f1f1;
+    font-weight: 100;
+    padding: 2px;
+}
+a:hover{
+    padding: 1px;
+    color: black;
+    background-color: #f1f1f1;
+}
